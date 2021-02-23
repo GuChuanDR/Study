@@ -3,7 +3,7 @@
 #include<math.h>
 #include<string.h>
 #include<windows.h>
-int main()                //输入三个数，从大到校排序
+int main()                //输入三个数，从大到小排序
 {
 	int a=0;
 	int b=0;
