@@ -3,7 +3,7 @@
 #include<math.h>
 #include<string.h>
 #include<windows.h>
-int main()
+int main()                //输入三个数，从大到校排序
 {
 	int a=0;
 	int b=0;
@@ -31,6 +31,9 @@ int main()
 	printf("%d %d %d\n",a,b,c);
 		return 0;
 }
+
+
+//求输出什么？
 
 {
 	int c = 0;
