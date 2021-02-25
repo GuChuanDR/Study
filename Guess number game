@@ -10,7 +10,7 @@ void menu ()
 	printf("***************************\n");
 }
 
-//RAND_MAX-32767
+//RAND_MAX -32767
 
 void game()
 {
@@ -74,14 +74,15 @@ return 0;
 
 
 
-//goto语句的使用,尽量少用
+//goto语句的使用,且尽量少用
 int main()
 {
 again:
 	printf("hello\n");
 	goto again;
-    return 0;
+        return 0;
 }
+
 
 //会跳过haha
 int main()
@@ -97,7 +98,8 @@ return 0;
 //for循环里面，当出现错误需要跳转先完成另外的任务
 
 
-//关机程序
+
+//关机恶搞程序
 #include <string.h>
 int main()
 {
