@@ -1,0 +1,113 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include <stdio.h>
+#include<string.h>
+  //写一个函数可以交换两个整形变量的内容
+int main()
+{
+	int a = 10;
+	int* pa = &a;      //pa是指针变量，存着a的地址
+	*pa = 20;          //解引用操作,通过pa的地址找到所指的内容，即10，让这个内容重新赋值为20
+	printf("%d\n",a);
+	return 0;
+}
+
+
+//当实参传给形参的时候
+//形参其实是实参的一份临时拷贝
+//对形参的修改是不会改变实参
+void swap1(int x,int y)   //void表示空，没有返回值
+{
+	int tmp = 0;
+	x = y;
+	y = tmp;
+}
+void swap2(int* pa,int* pb)
+{
+	int tmp = 0;
+	tmp = *pa;
+	*pa = *pb;
+	*pb = tmp;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int tmp = 0;
+	printf("a=%d b=%d\n",a,b);
+	swap2(&a,&b);     //swap交换函数
+	//tmp = a;
+	//a = b;
+	//b = tmp;
+	printf("a=%d b=%d\n",a,b);
+return 0;
+}
+
+
+
+
+	  //写一个函数可以找出两个整数的最大值
+//定义函数
+int get_max(int x,int y)
+{
+	if(x>y)
+	    return x;
+	else
+		return y;
+}
+
+int main()
+{
+	int a = 10;
+	int b = 20;
+	//函数的使用
+	int max = get_max(a,b);
+	printf("max = %d\n",max);
+	max = get_max(100,300);
+	printf("max = %d\n",max);
+return 0;
+}
+
+
+
+   	//memset函数的使用
+{
+	char arr[] = "hello";
+	memset(arr,'*',5);    //对arr这个数组进行处理，改成*号，5个
+	printf("%s\n",arr);
+return 0;
+}
+
+
+
+{
+	//strlen - string length - 字符串求长度
+	//strcpy - string copy - 字符串拷贝
+	char arr1[] = "xxxxxx";
+	char arr2[20] = "******";
+	strcpy(arr2,arr1);    //格式：把arr1复制到arr2，并且以\0为结束标志
+	printf("%s\n",arr2);
+	return 0;
+}
+
+
+
+
+//将两个数相加
+int Add(int x,int y)
+{
+	int z = 0;
+	z = x + y;
+	return z;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int sum = 0;
+	printf("请输入两个数->");
+	scanf("%d%d",&a,&b);
+	sum = Add(a,b);
+	printf("%d\n",sum);
+return 0;
+}
