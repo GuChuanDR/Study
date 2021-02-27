@@ -6,10 +6,10 @@
 //********求字符串长度********//
 //****************************//
 #include <string.h>
-//int my_strlen(char* str)  //这里的str是一个指针变量
+//int my_strlen(char* str)    //这里的str是一个指针变量
 //{
 //	int count = 0;
-//	while(*str != '\0')  //一直找到\0才停止
+//	while(*str != '\0')   //一直找到\0才停止
 //	{
 //		count++;
 //		str++;
@@ -44,10 +44,6 @@ int main()
 
 
 
-
-
-
-
 void print(int n)
 {
 	if(n>9)
@@ -59,7 +55,7 @@ void print(int n)
 int main()
 {
 	unsigned int num = 0;
-	scanf("%d",&num);  //1234
+	scanf("%d",&num);        //1234
 	//递归，函数自己调用自己
 	print(num);
 	//print(1234)
@@ -71,17 +67,15 @@ int main()
 
 
 
-//************************//
-//******最简单的递归******//
-//************************//
+//****************************//
+//********最简单的递归********//
+//***************************//
 int main()
 {
 	printf("hehe\n");
 	main();
 	return 0;
 }
-
-
 
 
 
@@ -112,11 +106,8 @@ int main()
 	len = strlen("abc");
 	printf("%d\n",len);
 	//2
-	printf("%d\n",strlen("abc"));  //链式访问
+	printf("%d\n",strlen("abc"));    //链式访问
 }
-
-
-
 
 
 
@@ -143,11 +134,10 @@ int main()
 
 
 
-
 //************************//
 //********二分查找********//
 //查找有序数组中某个数，找到返回数的下标，找不到返回-1//
-int binary_search(int arr[],int k,int sz)  //本质上arr是一个指针
+int binary_search(int arr[],int k,int sz)    //本质上arr是一个指针
 {
 	int left = 0;
 	int right = sz-1;
@@ -175,7 +165,7 @@ int main()
 	int arr[] = {1,2,3,4,5,6,7,8,9,10};
 	int k = 7;
 	int sz = sizeof(arr)/sizeof(arr[0]);  //要在函数外部计算函数个数
-	int ret = binary_search(arr,k,sz);   //这里的arr传递过去的是首元素的地址
+	int ret = binary_search(arr,k,sz);    //这里的arr传递过去的是首元素的地址
 	if(ret == -1)
 	{
 		printf("找不到指定数字\n");
@@ -186,7 +176,6 @@ int main()
 	}
 	return 0;
 }
-
 
 
 
@@ -221,8 +210,6 @@ int main()
 	printf("\n总个数>%d\n",count);
 	return 0;
 }
-
-
 
 
 
