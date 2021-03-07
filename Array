@@ -95,6 +95,7 @@ int main()
 
 
 
+
 //******************************//
 //*****使用冒泡函数进行排序*****//
 void bubble_sort(int arr[],int sz)
@@ -152,5 +153,4 @@ int main()
 	int sz = sizeof(arr)/sizeof(arr[0]);
 	return 0;
 }
-
 
